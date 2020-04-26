@@ -18,7 +18,7 @@ public class HelloAppIntegrationTest {
 	@Category(Integration.class)
 	public void sayHelloPass() throws URISyntaxException {
 		RestTemplate restTemplate = new RestTemplate();
-	    final String baseUrl = "http://localhost:8080/hello?name=dev";
+	    final String baseUrl = "http://192.168.1.9:31234/hello?name=dev";
 	    URI uri = new URI(baseUrl);
 	 
 	    ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);

@@ -1,1 +1,1 @@
-Demo application for CI CD.
+Demo application for CI/CD.
